@@ -138,7 +138,7 @@ bool Store::make_purchase(Person customer, product item, int amount)
 			t.quantity = amount;
 			add_transaction(t);
 
-			cout << "Successfull transaction!" << "\n";
+			cout << "Successful transaction!" << "\n";
 			cout << "Transaction Details: " << "\n";
 			cout << with_newline(t.transaction_info());
 			success = true;
@@ -147,7 +147,7 @@ bool Store::make_purchase(Person customer, product item, int amount)
 
 	if (!success)
 	{
-		cout << "Unsuccessfull transaction!" << "\n";
+		cout << "Unsuccessful transaction!" << "\n";
 		cout << "Transaction Details: " << "\n";
 		cout << "Person: " << with_newline(customer.person_info());
 		cout << "Product: " << "\n" << with_newline(item.product_info());
